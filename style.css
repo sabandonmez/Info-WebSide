@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500&family=Poppins:wght@300;400;600;700&family=Roboto&display=swap");
+
+:root {
+  --theme-color: white;
+  --helper-color: #0ba2c0;
+}
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(bg.jpg);
+  background-size: cover;
+}
+
+a {
+  color: var(--theme-color);
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/*? header start */
+header {
+  height: 10rem;
+  border-bottom: 0.2rem solid rgb(255, 255, 255, 0.28);
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+header nav .logo a {
+  color: var(--theme-color);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 2rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  column-gap: 3rem;
+}
+
+nav ul li a {
+  color: var(--theme-color);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+nav ul li a:hover {
+  color: var(--helper-color);
+}
+
+nav .menu {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  column-gap: 4.8rem;
+}
+nav .menu .menu-button {
+  color: var(--helper-color);
+  text-decoration: none;
+  background-color: rgb(255, 255, 255, 0.15);
+  padding: 1.2rem 2.4rem;
+  border-radius: 5.6rem;
+  transition: all 0.25s ease-in;
+}
+nav .menu .menu-button:hover {
+  background-color: var(--helper-color);
+  color: var(--theme-color);
+}
+/*? header end */
+
+
+/* ! responsive start */
+
+@media (max-width: 57.6rem) {
+  .container {
+    width: 100%;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+
+  .menu ul {
+    column-gap: 2rem;
+  }
+
+  .menu .menu-button {
+    display: none;
+  }
+}
+
+/* ! responsive end */
