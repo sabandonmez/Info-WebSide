@@ -17,7 +17,6 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   background-image: url(bg.jpg);
-  background-size: cover;
 }
 
 a {
@@ -81,6 +80,47 @@ nav .menu .menu-button:hover {
 }
 /*? header end */
 
+/* * section start */
+.content {
+  color: var(--theme-color);
+  height: calc(100vh-10rem);
+  padding-top: 15rem;
+}
+.content h1{
+    font-size: 6rem;
+    text-align: center;
+}
+.content p{
+    font-size: 2.4rem;
+    text-align: center;
+    margin-top: 3.2rem;
+}
+
+.content .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4.8rem;
+    column-gap: 1.6rem;
+}
+.content .links a{
+background-color: var(--theme-color);
+padding: 2rem;
+width: 28rem;
+color: black;
+text-align: center;
+font-size: 1.8rem;
+text-decoration: none;
+border-radius: 5.6rem;
+transition: all .25s ease-in-out;
+}
+
+.content .links a:hover{
+    background-color: var(--helper-color);
+    color: var(--theme-color);
+}
+
+/* * section end */
 
 /* ! responsive start */
 
@@ -97,6 +137,25 @@ nav .menu .menu-button:hover {
 
   .menu .menu-button {
     display: none;
+  }
+  .content{
+    padding-top: 5rem;
+  }
+  .content h1{
+    font-size: 3.6rem;
+  }
+  .content p{
+    font-size: 1.6rem;
+  }
+
+  .content .links {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  }
+  .content .links a{
+    padding: 1.4rem;
+    width: 90%;
   }
 }
 
